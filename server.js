@@ -39,6 +39,12 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects', {
+    message : "Some projects"
+  });
+});
+
 app.get('/about', (req,res) => {
   res.send('<h1>About!</h1>');
 });
