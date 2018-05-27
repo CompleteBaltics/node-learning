@@ -29,9 +29,9 @@ app.use((req, res, next) => {
   next();
 });
 
-// app.use((req, res, next) => {
-//   res.render('maintainence');
-// });
+app.use((req, res, next) => {
+  res.render('maintainence');
+});
 
 app.get('/', (req, res) => {
   res.render('template', {
